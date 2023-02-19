@@ -1,0 +1,380 @@
+{
+	id: "74EEE39DAAD5D5D6"
+	group: "26C9462713CC8837"
+	order_index: 1
+	filename: "chapter_1"
+	title: "章节：1"
+	icon: "mw_core:basic_mechanism"
+	default_quest_shape: ""
+	default_hide_dependency_lines: false
+	quests: [
+		{
+			icon: "farmersdelight:lime_canvas_sign"
+			x: 2.0d
+			y: -0.5d
+			subtitle: "&a☑&r我已阅读并同意以上条款"
+			description: [
+				"①与更高级的构件不同，基础构件可以在背包或工作台中合成。"
+				"②虽然但是, 将基础构建的生产自动化可以在降低成本的同时得到更高的效率。"
+			]
+			dependencies: [
+				"2C0A2986300275F6"
+				"75F74C3D065BD772"
+			]
+			hide: true
+			id: "099EE7F5982F13E0"
+			tasks: [{
+				id: "3B1C2D2D3CA74241"
+				type: "checkmark"
+				title: "在游玩本章前，请先阅读以下条款："
+			}]
+		}
+		{
+			icon: "create:brass_hand"
+			x: 4.0d
+			y: -0.5d
+			dependencies: ["099EE7F5982F13E0"]
+			id: "3355FD301C1D65B5"
+			tasks: [{
+				id: "26BF422697353A8C"
+				type: "checkmark"
+				title: "第一章，开始！"
+			}]
+		}
+		{
+			title: "可持续性滥砍滥伐"
+			icon: "minecraft:oak_log"
+			x: 3.0d
+			y: 2.5d
+			subtitle: "我又能有什么坏心思呢?"
+			description: ["自动化的原木生产是基础构件自动化中模具制造的关键一环。"]
+			dependencies: ["3355FD301C1D65B5"]
+			id: "208D27F26708E3F0"
+			tasks: [
+				{
+					id: "2BE61AF37A1A2038"
+					type: "item"
+					title: "任意原木"
+					item: {
+						id: "itemfilters:tag"
+						Count: 1b
+						tag: {
+							value: "minecraft:logs"
+						}
+					}
+				}
+				{
+					id: "5D58A22AC1EA0776"
+					type: "checkmark"
+					title: "已自动化"
+				}
+			]
+		}
+		{
+			title: "木材切片机"
+			icon: "minecraft:oak_planks"
+			x: 3.5d
+			y: 5.0d
+			subtitle: "哇噢！真想不到！"
+			description: ["是时候把这些原木切成木板了！你需要两个动力锯来分别完成去皮和切割两个步骤。"]
+			dependencies: ["208D27F26708E3F0"]
+			id: "7B4CD0F06E371092"
+			tasks: [
+				{
+					id: "72F7A8B9D4D8923A"
+					type: "item"
+					title: "任意木板"
+					item: {
+						id: "itemfilters:tag"
+						Count: 1b
+						tag: {
+							value: "minecraft:planks"
+						}
+					}
+				}
+				{
+					id: "540335A3CDB66CC6"
+					type: "checkmark"
+					title: "已自动化"
+				}
+			]
+		}
+		{
+			title: "降维打击"
+			icon: "tconstruct:pattern"
+			x: 4.0d
+			y: 7.0d
+			subtitle: "压扁它们！"
+			description: ["模具可以通过利用动力辊压机辊压木板来自动化生产。"]
+			dependencies: ["7B4CD0F06E371092"]
+			id: "1ADBA6BCB330A098"
+			tasks: [
+				{
+					id: "2C30788140CF8A02"
+					type: "item"
+					item: "tconstruct:pattern"
+				}
+				{
+					id: "762C000AF98E5CCE"
+					type: "checkmark"
+					title: "已自动化"
+				}
+			]
+		}
+		{
+			icon: "minecraft:andesite"
+			x: 9.0d
+			y: 6.0d
+			subtitle: "谁在乎化学？"
+			description: ["把你那违反物理定律的无限圆石和你刚出炉的熔融石英混合，造出安山岩。"]
+			dependencies: [
+				"7281584E0B0CC034"
+				"242D737C5AFEF87A"
+			]
+			id: "0E479B6DB140D36E"
+			tasks: [
+				{
+					id: "123CC98655046B2A"
+					type: "item"
+					item: "minecraft:andesite"
+				}
+				{
+					id: "44069EAB9BADF91E"
+					type: "checkmark"
+					title: "已自动化"
+				}
+			]
+		}
+		{
+			title: "新奇合金"
+			icon: "create:andesite_alloy"
+			x: 7.0d
+			y: 7.0d
+			dependencies: [
+				"7499F29D5F31E5F4"
+				"0E479B6DB140D36E"
+			]
+			id: "492EF9F4EBB57C35"
+			tasks: [
+				{
+					id: "7E1DC0F81147AAAF"
+					type: "item"
+					item: "create:andesite_alloy"
+				}
+				{
+					id: "119300F88873FE23"
+					type: "checkmark"
+					title: "已自动化"
+				}
+			]
+		}
+		{
+			icon: "tconstruct:molten_iron_bucket"
+			x: 7.0d
+			y: 5.0d
+			description: ["让我们用焦黑熔化炉来融化一点铁粒。"]
+			dependencies: ["1B67AC5B24738B38"]
+			id: "7499F29D5F31E5F4"
+			tasks: [
+				{
+					id: "2241C8990B74427B"
+					type: "item"
+					item: "tconstruct:molten_iron_bucket"
+				}
+				{
+					id: "535E0700DF636A75"
+					type: "checkmark"
+					title: "已自动化"
+				}
+			]
+		}
+		{
+			icon: "minecraft:iron_nugget"
+			x: 5.0d
+			y: 5.5d
+			description: ["从你的沙砾中淘洗出铁粒，概率UP！"]
+			dependencies: ["60ADB14B7175DD03"]
+			id: "1B67AC5B24738B38"
+			tasks: [
+				{
+					id: "2F84F3456D036767"
+					type: "item"
+					item: "minecraft:iron_nugget"
+				}
+				{
+					id: "27D7767C4E9FD28F"
+					type: "checkmark"
+					title: "已自动化"
+				}
+			]
+		}
+		{
+			icon: "mw_core:basic_mechanism"
+			x: 5.5d
+			y: 8.5d
+			dependencies: [
+				"492EF9F4EBB57C35"
+				"1B67AC5B24738B38"
+				"1ADBA6BCB330A098"
+			]
+			id: "552F8F8CE7A6CE21"
+			tasks: [
+				{
+					id: "2C0E8F1FE872AA5F"
+					type: "item"
+					item: "mw_core:basic_mechanism"
+				}
+				{
+					id: "7F6C4C755AC4B82A"
+					type: "checkmark"
+					title: "已自动化"
+				}
+			]
+			rewards: [{
+				id: "14F057306C81CBD0"
+				type: "item"
+				item: {
+					id: "ftbquests:lootcrate"
+					Count: 1b
+					tag: {
+						type: "basic_mechanism_reward_table"
+					}
+				}
+			}]
+		}
+		{
+			icon: "minecraft:gravel"
+			x: 7.0d
+			y: 0.5d
+			subtitle: "细细地切作臊子……"
+			description: ["用石磨将圆石磨成沙砾。"]
+			dependencies: ["7281584E0B0CC034"]
+			id: "60ADB14B7175DD03"
+			tasks: [
+				{
+					id: "7E46079D3283A314"
+					type: "item"
+					item: "minecraft:gravel"
+				}
+				{
+					id: "4BACD123EF334770"
+					type: "checkmark"
+					title: "已自动化"
+				}
+			]
+		}
+		{
+			title: "例外情况"
+			icon: "minecraft:cobblestone"
+			x: 5.0d
+			y: 1.0d
+			subtitle: "物质守恒，除非..."
+			dependencies: ["3355FD301C1D65B5"]
+			id: "7281584E0B0CC034"
+			tasks: [
+				{
+					id: "2506AD3367395DD7"
+					type: "item"
+					item: "minecraft:cobblestone"
+				}
+				{
+					id: "773E6CBD4E761B4B"
+					type: "checkmark"
+					title: "已自动化"
+				}
+			]
+		}
+		{
+			title: "不明液体"
+			icon: "tconstruct:molten_quartz_bucket"
+			x: 11.0d
+			y: 5.5d
+			subtitle: "滚烫的乳白色流体"
+			description: ["你可以把从灵魂沙中淘洗得到的下界石英融化为这一有用的流体。"]
+			dependencies: ["08782E9458FE1C84"]
+			id: "242D737C5AFEF87A"
+			tasks: [
+				{
+					id: "081E0A5324508F94"
+					type: "item"
+					item: "tconstruct:molten_quartz_bucket"
+				}
+				{
+					id: "6CB06CE2D483F948"
+					type: "checkmark"
+					title: "已自动化"
+				}
+			]
+		}
+		{
+			icon: "minecraft:soul_sand"
+			x: 9.0d
+			y: 3.0d
+			subtitle: "真是见了鬼了"
+			description: [
+				"灵魂沙的制造真是一种缠人魂魄的经历！"
+				"好吧，不开玩笑了……将沙子缠魂以得到灵魂沙。"
+			]
+			dependencies: ["6D08C286B27BD859"]
+			id: "074B03D38705D1E0"
+			tasks: [
+				{
+					id: "79B096A3100A1B68"
+					type: "item"
+					item: "minecraft:soul_sand"
+				}
+				{
+					id: "1B9EB01851C95C4B"
+					type: "checkmark"
+					title: "已自动化"
+				}
+			]
+		}
+		{
+			icon: "minecraft:sand"
+			x: 8.5d
+			y: 1.5d
+			subtitle: "……不要见半点砾石在里面"
+			description: ["用石磨研磨沙砾得到沙子。你说不定能顺便得到些别的什么有用的玩意。"]
+			dependencies: ["60ADB14B7175DD03"]
+			id: "6D08C286B27BD859"
+			tasks: [
+				{
+					id: "5D34A820FEC5BF6E"
+					type: "item"
+					item: "minecraft:sand"
+				}
+				{
+					id: "750C5BC146A8D8CE"
+					type: "checkmark"
+					title: "已自动化"
+				}
+			]
+		}
+		{
+			icon: "mw_core:copper_mechanism"
+			x: 4.0d
+			y: 9.5d
+			dependencies: ["552F8F8CE7A6CE21"]
+			id: "682F0B62DB2A51A8"
+			tasks: [{
+				id: "0F4564EBE5C847E1"
+				type: "checkmark"
+				title: "第一章-支线"
+			}]
+		}
+		{
+			x: 10.0d
+			y: 4.0d
+			description: ["淘洗灵魂沙以得到下界石英。"]
+			dependencies: ["074B03D38705D1E0"]
+			id: "08782E9458FE1C84"
+			tasks: [{
+				id: "32A2E07214299DC6"
+				type: "item"
+				item: "minecraft:quartz"
+			}]
+		}
+	]
+	quest_links: [ ]
+}

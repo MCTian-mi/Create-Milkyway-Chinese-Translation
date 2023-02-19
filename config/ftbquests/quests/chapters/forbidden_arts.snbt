@@ -1,0 +1,116 @@
+{
+	id: "2661A26BB1ABE177"
+	group: "76E7DC80C9223355"
+	order_index: 0
+	filename: "forbidden_arts"
+	title: "禁忌之艺术"
+	icon: "forbidden_arcanus:hephaestus_forge"
+	default_quest_shape: ""
+	default_hide_dependency_lines: false
+	quests: [
+		{
+			icon: "forbidden_arcanus:dark_soul"
+			x: -1.0d
+			y: -1.0d
+			subtitle: "黑暗深邃，却无比美丽"
+			description: [
+				"黑魔法仪式可以用来锻造魔法物品，或是召唤生物。"
+				"生物的牺牲，抑或是你创造的饰品，都会推动你的进度——即使你的手段并不怎么“道德”。"
+			]
+			dependencies: ["747ED96162F5B664"]
+			id: "2ECEBAE9D05E8B87"
+			tasks: [{
+				id: "729CA194C4C92962"
+				type: "checkmark"
+				title: "黑魔法仪式"
+			}]
+		}
+		{
+			x: 1.0d
+			y: 1.0d
+			hide_dependency_lines: true
+			dependencies: ["2ECEBAE9D05E8B87"]
+			id: "61257FBF8525EAC2"
+			tasks: [{
+				id: "1D93D5797B1E3E7D"
+				type: "observation"
+				title: "赫菲斯托斯锻台"
+				icon: "forbidden_arcanus:hephaestus_forge"
+				timer: 0L
+				observe_type: 0
+				to_observe: "forbidden_arcanus:hephaestus_forge"
+			}]
+		}
+		{
+			x: 1.5d
+			y: -2.0d
+			hide_dependency_lines: true
+			dependencies: ["2ECEBAE9D05E8B87"]
+			id: "1B54415C4F7F4B5E"
+			tasks: [{
+				id: "76AE497291CAAC30"
+				type: "observation"
+				title: "召唤祭坛"
+				icon: "summoningrituals:altar"
+				timer: 0L
+				observe_type: 0
+				to_observe: "summoningrituals:altar"
+			}]
+		}
+		{
+			x: -2.0d
+			y: 1.5d
+			hide_dependency_lines: true
+			dependencies: ["2ECEBAE9D05E8B87"]
+			id: "200E9C9E41239402"
+			tasks: [{
+				id: "1C471D1289A5376A"
+				type: "item"
+				item: {
+					id: "waystones:warp_stone"
+					Count: 1b
+					tag: {
+						Damage: 0
+					}
+				}
+			}]
+		}
+		{
+			x: -4.0d
+			y: 0.0d
+			hide_dependency_lines: true
+			dependencies: ["200E9C9E41239402"]
+			id: "5C87EDA3FECE3BB8"
+			tasks: [{
+				id: "5A5608EB21749EA6"
+				type: "item"
+				item: "waystones:waystone"
+			}]
+		}
+		{
+			title: "耀金熔炉"
+			x: -3.0d
+			y: -2.0d
+			subtitle: "靠，一团糟！"
+			description: [
+				"额……这里有个问题，虽然我很努力想要整出一个能够消耗神秘水晶粉末来烧制物品的熔炉，但是这玩意还是有着&4&l非常多的bug&r，也就是说，它并不怎么可靠。"
+				"所以如果你在未来的某一天从随机矿里挖出了这玩意，那是你的问题，与我无关。"
+			]
+			hide_dependency_lines: true
+			dependencies: ["2ECEBAE9D05E8B87"]
+			id: "6C003EFCDE90DAFC"
+			tasks: [{
+				id: "343BF7B384B0F1F1"
+				type: "item"
+				item: {
+					id: "custommachinery:custom_machine_item"
+					Count: 1b
+					tag: {
+						machine: "custommachinery:aureal_furnace"
+					}
+				}
+			}]
+		}
+	]
+	quest_links: [ ]
+}

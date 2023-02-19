@@ -1,0 +1,167 @@
+{
+	id: "0360F7F4EAFF5D7B"
+	group: "26C9462713CC8837"
+	order_index: 0
+	filename: "progression"
+	title: "概览"
+	icon: "minecraft:filled_map"
+	default_quest_shape: ""
+	default_hide_dependency_lines: false
+	quests: [
+		{
+			title: "探索新世界"
+			icon: "create:cogwheel"
+			disable_toast: true
+			x: -20.0d
+			y: -2.5d
+			shape: "gear"
+			subtitle: "你离开后，世界变了很多……"
+			dependencies: ["2A39249976E79176"]
+			size: 3.0d
+			id: "11CF00C9EEC3C9C8"
+			tasks: [{
+				id: "5F9A7A749DA4BF58"
+				type: "checkmark"
+				title: "准备好开始"
+			}]
+		}
+		{
+			title: "打好基础"
+			icon: "mw_core:basic_mechanism"
+			x: -16.5d
+			y: -2.5d
+			shape: "gear"
+			dependencies: ["75F74C3D065BD772"]
+			hide: false
+			id: "2C0A2986300275F6"
+			tasks: [{
+				id: "06C1A6E6BD386063"
+				type: "checkmark"
+				title: "基础机器"
+			}]
+		}
+		{
+			title: "全面升级"
+			icon: "create:precision_mechanism"
+			x: -14.0d
+			y: -2.5d
+			shape: "gear"
+			dependencies: [
+				"2C0A2986300275F6"
+				"552F8F8CE7A6CE21"
+			]
+			id: "4CD56BDAF5F61552"
+			tasks: [{
+				id: "2B82E19690BB8EEC"
+				type: "checkmark"
+				title: "精密机器"
+			}]
+		}
+		{
+			title: "热力扩张"
+			icon: "mw_core:cobalt_mechanism"
+			x: -11.0d
+			y: -2.5d
+			shape: "gear"
+			dependencies: [
+				"4CD56BDAF5F61552"
+				"32FE250DD6950ABE"
+			]
+			id: "58D2C0B12357186B"
+			tasks: [{
+				id: "648AB343F229945F"
+				type: "checkmark"
+				title: "Cobalt Machinery"
+			}]
+		}
+		{
+			icon: "forbidden_arcanus:smelter_prism"
+			x: -18.5d
+			y: -5.0d
+			hide_dependency_lines: true
+			dependencies: ["11CF00C9EEC3C9C8"]
+			id: "1C0D3D5FBBAC4DF3"
+			tasks: [{
+				id: "7047AF83CFF3FC10"
+				type: "checkmark"
+				title: "冶金学"
+			}]
+		}
+		{
+			title: "就这么，结束了？……"
+			icon: "mw_core:manyullyn_mechanism"
+			x: -5.0d
+			y: -2.5d
+			shape: "gear"
+			subtitle: "穷尽最后一滴创造之力……"
+			dependencies: ["501D87E236FCB915"]
+			size: 3.0d
+			id: "068568D3D5E20DAC"
+			tasks: [{
+				id: "6937BBCD32F0242C"
+				type: "checkmark"
+				title: "玛玉灵构件"
+			}]
+		}
+		{
+			title: "创新发明"
+			icon: "mw_core:creative_alloy"
+			x: -8.5d
+			y: -2.5d
+			dependencies: ["58D2C0B12357186B"]
+			id: "501D87E236FCB915"
+			tasks: [{
+				id: "4BAA22FBE0A415D1"
+				type: "checkmark"
+				title: "Creative Materials"
+			}]
+		}
+		{
+			title: "禁忌之艺术"
+			icon: "forbidden_arcanus:hephaestus_forge"
+			x: -11.0d
+			y: -4.0d
+			hide_dependency_lines: true
+			dependencies: ["068568D3D5E20DAC"]
+			secret: true
+			id: "747ED96162F5B664"
+			tasks: [{
+				id: "681BB2941AACAA14"
+				type: "checkmark"
+				title: "Arcane Sorcery"
+			}]
+		}
+		{
+			icon: "create_enchantment_industry:enchanting_guide"
+			x: -18.0d
+			y: -2.5d
+			shape: "gear"
+			subtitle: "他在说什么？"
+			description: [
+				"在游戏中后期的任务线中，你可能会遇到以附魔指南为图标的任务，这样的任务表示某物质已于之前的章节实现自动化。"
+				"同时，这样的任务还会告诉你具体完成自动化的章节。"
+			]
+			dependencies: ["11CF00C9EEC3C9C8"]
+			id: "75F74C3D065BD772"
+			tasks: [{
+				id: "5744BC158A136D75"
+				type: "checkmark"
+				title: "“自动化已完成”?"
+			}]
+		}
+		{
+			icon: "immersiveengineering:workbench"
+			x: -15.0d
+			y: -0.5d
+			dependencies: ["552F8F8CE7A6CE21"]
+			secret: true
+			id: "557DFCE6AF64FB1B"
+			tasks: [{
+				id: "472557F51EAEABD0"
+				type: "checkmark"
+				title: "工程时间！"
+			}]
+		}
+	]
+	quest_links: [ ]
+}
