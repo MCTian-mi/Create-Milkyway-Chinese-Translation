@@ -71,7 +71,7 @@
 			tasks: [{
 				id: "648AB343F229945F"
 				type: "checkmark"
-				title: "Cobalt Machinery"
+				title: "辉钴机器"
 			}]
 		}
 		{
@@ -113,7 +113,7 @@
 			tasks: [{
 				id: "4BAA22FBE0A415D1"
 				type: "checkmark"
-				title: "Creative Materials"
+				title: "创造性的材料"
 			}]
 		}
 		{
@@ -128,7 +128,7 @@
 			tasks: [{
 				id: "681BB2941AACAA14"
 				type: "checkmark"
-				title: "Arcane Sorcery"
+				title: "奥术魔法"
 			}]
 		}
 		{
@@ -159,7 +159,7 @@
 			tasks: [{
 				id: "472557F51EAEABD0"
 				type: "checkmark"
-				title: "工程时间！"
+				title: "工程时间到！"
 			}]
 		}
 	]

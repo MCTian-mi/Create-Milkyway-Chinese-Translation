@@ -231,7 +231,6 @@
 			]
 		}
 		{
-			title: "死而复生"
 			icon: "minecraft:netherrack"
 			x: 8.0d
 			y: 1.0d
@@ -511,6 +510,7 @@
 			}]
 		}
 		{
+			title: "熔融石英"
 			x: 0.0d
 			y: -3.5d
 			subtitle: "[自动化已完成]"

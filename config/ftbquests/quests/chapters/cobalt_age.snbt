@@ -51,6 +51,7 @@
 			}]
 		}
 		{
+			title: "熔融铅"
 			icon: "tconstruct:molten_lead_bucket"
 			x: -2.0d
 			y: 6.5d
@@ -147,6 +148,7 @@
 			}]
 		}
 		{
+			title: "熔融钴"
 			icon: "tconstruct:molten_cobalt_bucket"
 			x: 4.0d
 			y: 3.0d
@@ -168,6 +170,7 @@
 			]
 		}
 		{
+			title: "熔融锌"
 			icon: "tconstruct:molten_zinc_bucket"
 			x: -2.5d
 			y: 4.0d
@@ -313,7 +316,7 @@
 			icon: "create:scoria"
 			x: -6.0d
 			y: 1.0d
-			description: ["烧炼灵魂沙可以得到熔渣。最好不要多想。"]
+			description: ["烧炼灵魂沙可以得到熔渣。最好别去想它。"]
 			dependencies: ["619760787EF29973"]
 			id: "7F9F2C05DD8FE2BE"
 			tasks: [
@@ -450,7 +453,7 @@
 			x: 3.5d
 			y: -3.0d
 			shape: "gear"
-			subtitle: "已自动化 in Chapter 1"
+			subtitle: "[已于第一章自动化]"
 			hide_dependency_lines: true
 			dependencies: ["44286347C6F6AC67"]
 			id: "2C522C3F689D3703"
@@ -466,7 +469,7 @@
 			x: -5.0d
 			y: -3.0d
 			shape: "gear"
-			subtitle: "已自动化 in Chapter 1"
+			subtitle: "[已于第一章自动化]"
 			hide_dependency_lines: true
 			dependencies: ["44286347C6F6AC67"]
 			id: "4058BED15C956B22"
@@ -482,7 +485,7 @@
 			x: 1.0d
 			y: 1.5d
 			shape: "gear"
-			subtitle: "已自动化 in Chapter 2"
+			subtitle: "[已于第二章自动化]"
 			hide_dependency_lines: true
 			dependencies: ["44286347C6F6AC67"]
 			id: "2248C1E1A0AC7CEB"
@@ -498,7 +501,7 @@
 			x: 2.5d
 			y: 2.5d
 			shape: "gear"
-			subtitle: "已自动化 in Chapter 2"
+			subtitle: "[已于第二章自动化]"
 			hide_dependency_lines: true
 			dependencies: ["44286347C6F6AC67"]
 			id: "487ED42271AE45D6"

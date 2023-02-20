@@ -279,6 +279,7 @@
 			]
 		}
 		{
+			title: "熔融铁"
 			icon: "tconstruct:molten_iron_bucket"
 			x: -1.0d
 			y: 8.0d
@@ -370,6 +371,7 @@
 			]
 		}
 		{
+			title: "熔融铜"
 			icon: "tconstruct:molten_copper_bucket"
 			x: -3.0d
 			y: 4.5d

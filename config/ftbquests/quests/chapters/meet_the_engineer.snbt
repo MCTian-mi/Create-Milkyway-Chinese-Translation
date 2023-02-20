@@ -81,6 +81,7 @@
 						value: "forge:treated_wood_slab"
 					}
 				}
+				consume_items: false
 			}]
 		}
 		{
@@ -93,6 +94,7 @@
 				id: "25AC00081165E200"
 				type: "item"
 				item: "minecraft:redstone"
+				consume_items: false
 			}]
 		}
 		{

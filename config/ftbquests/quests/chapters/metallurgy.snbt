@@ -299,13 +299,13 @@
 			icon: "thermal:machine_smelter"
 			x: 6.5d
 			y: 0.5d
-			subtitle: "1 Ingot"
+			subtitle: "1×金属锭"
 			dependencies: ["5983505D17A43E54"]
 			id: "37DA1A7FA6D1047F"
 			tasks: [{
 				id: "0CFCBDD1393807E8"
 				type: "checkmark"
-				title: "感应炉烧制矿粉"
+				title: "感应炉烧制金属粉"
 			}]
 		}
 	]
