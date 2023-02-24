@@ -4,9 +4,11 @@
 	order_index: 0
 	filename: "create_milkyway"
 	title: "Create: Milkyway"
+	icon: "mw_core:milkfur_plush"
 	default_quest_shape: ""
 	default_hide_dependency_lines: false
-	quests: [{
+	quests: [
+		{
 		icon: "ftbquests:book"
 		x: 0.0d
 		y: 0.0d
@@ -20,20 +22,65 @@
 			type: "checkmark"
 			title: "睡前故事"
 		}]
-		rewards: [
-			{
-				id: "45A2DBCA31293551"
-				type: "item"
-				item: "mw_core:soda"
-				count: 4
+			rewards: [
+				{
+					id: "45A2DBCA31293551"
+					type: "item"
+					item: "mw_core:soda"
+					count: 4
+				}
+				{
+					id: "2621703463490934"
+					type: "item"
+					item: "create_confectionery:gingerbread"
+					count: 8
+				}
+			]
+		}
+		{
+			icon: "kubejs:trade_card_fluix_quartz"
+			x: 2.5d
+			y: 1.5d
+			description: ["世界上的一切事物都早已被打好了价格——这样的资本主义你喜欢吗？"]
+			dependencies: ["2A39249976E79176"]
+			id: "02A10857C0EA08CD"
+			tasks: [{
+				id: "506C7CBEAE2AA94D"
+				type: "checkmark"
+				title: "总之，先看看咱们能买些什么"
+			}]
+			rewards: [{
+				id: "558EF680283F858B"
+				type: "random"
+				title: "一些银币"
+				icon: {
+					id: "ftbquests:custom_icon"
+					Count: 1b
+					tag: {
+						Icon: "thermal:textures/item/silver_coin_4.png"
+					}
+				}
+				table_id: 3300416568307236153L
+			}]
+		}
+		{
+			icon: {
+				id: "tconstruct:creative_slot"
+				Count: 1b
+				tag: {
+					slot: "upgrades"
+				}
 			}
-			{
-				id: "2621703463490934"
-				type: "item"
-				item: "create_confectionery:gingerbread"
-				count: 8
-			}
-		]
-	}]
+			x: 4.5d
+			y: 0.5d
+			dependencies: ["02A10857C0EA08CD"]
+			id: "04A7A7E4A605D66C"
+			tasks: [{
+				id: "08B91BE5D090AA3A"
+				type: "checkmark"
+				title: "话不多说，开始吧！"
+			}]
+		}
+	]
 	quest_links: [ ]
 }

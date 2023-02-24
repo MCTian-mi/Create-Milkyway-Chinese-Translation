@@ -458,7 +458,7 @@
 			icon: "minecraft:enchanted_golden_apple"
 			x: 5.0d
 			y: 8.0d
-			description: ["使用神秘金锭代替金锭来制作金苹果可以得到附魔金苹果。"]
+			description: ["使用神秘金锭代替金锭来制作金苹果可以得到神秘金苹果。"]
 			dependencies: ["07F252B49264958F"]
 			id: "393875B8722F7AF1"
 			tasks: [
@@ -520,7 +520,7 @@
 			x: 6.5d
 			y: 8.0d
 			description: [
-				"将附魔金苹果祛魔可以得到液态经验。",
+				"将神秘金苹果祛魔可以得到液态经验。",
 				"&7译注：你真的想要这么做吗？其实你可以用经验颗粒。"
 				]
 			dependencies: [
@@ -1085,7 +1085,7 @@
 				{
 					id: "56E3B2A56BFD7D32"
 					type: "checkmark"
-					title: "Blaze Melting"
+					title: "已自动化"
 				}
 				{
 					id: "2DDF01E9E44CB522"

@@ -16,7 +16,7 @@
 			y: -2.5d
 			shape: "gear"
 			subtitle: "你离开后，世界变了很多……"
-			dependencies: ["2A39249976E79176"]
+			dependencies: ["04A7A7E4A605D66C"]
 			size: 3.0d
 			id: "11CF00C9EEC3C9C8"
 			tasks: [{
@@ -58,7 +58,7 @@
 			}]
 		}
 		{
-			title: "热力扩张"
+			title: "热力革命"
 			icon: "mw_core:cobalt_mechanism"
 			x: -11.0d
 			y: -2.5d
@@ -146,7 +146,7 @@
 			tasks: [{
 				id: "5744BC158A136D75"
 				type: "checkmark"
-				title: "“自动化已完成”?"
+				title: "“自动化已完成”？"
 			}]
 		}
 		{
@@ -160,6 +160,7 @@
 				id: "472557F51EAEABD0"
 				type: "checkmark"
 				title: "工程时间到！"
+				subtitle: "我要灯泡~"
 			}]
 		}
 	]

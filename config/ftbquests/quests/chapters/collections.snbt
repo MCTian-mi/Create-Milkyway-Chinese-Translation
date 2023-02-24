@@ -108,7 +108,7 @@
 			}]
 		}
 		{
-			icon: "create:andesite_casing"
+			icon: "mw_core:basic_mechanism"
 			x: -1.5d
 			y: 3.0d
 			hide_dependency_lines: true
@@ -142,7 +142,7 @@
 						type: "basic_mechanism_reward_table"
 					}
 				}
-				count: 4
+				count: 16
 			}]
 		}
 		{
@@ -533,7 +533,7 @@
 			}]
 		}
 		{
-			icon: "create:brass_casing"
+			icon: "create:precision_mechanism"
 			x: -0.5d
 			y: 3.0d
 			hide_dependency_lines: true
@@ -580,7 +580,7 @@
 						type: "precision_mechanism_reward_table"
 					}
 				}
-				count: 4
+				count: 16
 			}]
 		}
 		{
@@ -776,7 +776,7 @@
 			}]
 		}
 		{
-			icon: "create:copper_casing"
+			icon: "mw_core:copper_mechanism"
 			x: 0.5d
 			y: 3.0d
 			hide_dependency_lines: true
@@ -814,7 +814,7 @@
 						type: "copper_mechanism_reward_table"
 					}
 				}
-				count: 4
+				count: 16
 			}]
 		}
 		{
@@ -1102,6 +1102,42 @@
 				id: "038D422356B7A159"
 				type: "item"
 				item: "thermal:machine_smelter"
+			}]
+		}
+		{
+			icon: "mw_core:cobalt_mechanism"
+			x: 1.5d
+			y: 3.0d
+			hide_dependency_lines: true
+			dependencies: [
+				"1BAC24189CA75CB0"
+				"39A9EE38105B605D"
+				"432E6C931ECE0F9F"
+				"27BB897725CE3475"
+				"6ACB01511DF95375"
+				"608CCA07FCE465C4"
+				"196F29A0F50B559D"
+				"209A93030A916BE6"
+				"16F5A81D9E39EF72"
+				"52C68D747FE77D31"
+			]
+			id: "10FBE246EC52C26F"
+			tasks: [{
+				id: "561CE541D5246F0A"
+				type: "checkmark"
+				title: "辉钴构件产品收集完成！"
+			}]
+			rewards: [{
+				id: "4E56CE4CD8911A44"
+				type: "item"
+				item: {
+					id: "ftbquests:lootcrate"
+					Count: 1b
+					tag: {
+						type: "cobalt"
+					}
+				}
+				count: 16
 			}]
 		}
 	]

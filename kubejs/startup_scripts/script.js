@@ -21,7 +21,16 @@ let sheetSet = (name, loc, rarity) => {
 	event.create('reprocessed_' + id + '_sheet').texture("kubejs:item/reprocessed_" + id + "_sheet").displayName('再处理' + loc + '板').rarity(rarity ? rarity : RARITY_COMMON)
 	event.create('reinforced_' + id + '_sheet').texture("kubejs:item/reinforced_" + id + "_sheet").displayName('致密' + loc + '板').rarity(rarity ? rarity : RARITY_COMMON)
 }
-sheetSet('Zinc', "锌")
+	sheetSet('Zinc', "锌")
+
+let metalSet = (name, rarity, toLowerCase) => {
+	let id = name.toLowerCase()
+	event.create(id + '_ingot').texture("kubejs:item/" + id + "_ingot").displayName(loc + '锭').rarity(rarity ? rarity : RARITY_COMMON)
+	event.create(id + '_nugget').texture("kubejs:item/" + id + "_nugget").displayName(loc + '粒').rarity(rarity ? rarity : RARITY_COMMON)
+	event.create(id + '_sheet').texture("kubejs:item/" + id + "_sheet").displayName(loc + '板').rarity(rarity ? rarity : RARITY_COMMON)
+}
+    //metalSet('Bronze')
+	//metalSet('Steel')
 	let mechanism = (name, loc, rarity) => {
 		let id = name.toLowerCase()
 		event.create(id + '_mechanism').texture("kubejs:item/" + id + "_mechanism").displayName(loc + '构件').rarity(rarity ? rarity : RARITY_COMMON)
@@ -46,5 +55,5 @@ onEvent('block.registry', event => {
 			.renderType(layer)
 	}
 	machine('Refined', "精致", "cutout")
-})
 
+})

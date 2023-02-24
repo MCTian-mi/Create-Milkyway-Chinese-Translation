@@ -1,7 +1,7 @@
 {
 	id: "61ECC4A52EB75A9A"
 	order_index: 1
-	title: "铜"
+	title: "青铜"
 	icon: "minecraft:copper_ingot"
 	loot_size: 1
 	rewards: [
@@ -28,7 +28,7 @@
 			monster: 0
 		}
 		color: 6763540
-		item_name: "铜制板条箱"
+		item_name: "青铜板条箱"
 		string_id: "copper_mechanism_reward_table"
 	}
 }

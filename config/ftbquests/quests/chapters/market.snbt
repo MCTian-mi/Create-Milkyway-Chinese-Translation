@@ -126,8 +126,8 @@
 			title: "饕餮盛宴"
 			icon: "farmersdelight:steak_and_potatoes"
 			disable_toast: true
-			x: -7.0d
-			y: -1.5d
+			x: -11.0d
+			y: -2.0d
 			subtitle: "10银币"
 			description: ["人多少得偶尔吃顿大餐奖励一下自己。"]
 			id: "09DC2E2BE2BE32F4"
@@ -175,8 +175,8 @@
 		{
 			title: "平整地表"
 			icon: "minecraft:dirt"
-			x: -6.0d
-			y: -0.5d
+			x: -7.0d
+			y: -1.5d
 			subtitle: "15银币"
 			description: ["在游戏早期，这些泥土可以为你的基地建造提供原料。"]
 			id: "4B01606CE7AF3121"
@@ -212,8 +212,8 @@
 		{
 			title: "末地特产"
 			icon: "minecraft:shulker_box"
-			x: -4.0d
-			y: -0.5d
+			x: -3.0d
+			y: 0.0d
 			subtitle: "4金币"
 			description: ["背包，但是更香草。"]
 			id: "4FD46F841CCD59F8"
@@ -246,8 +246,8 @@
 		{
 			title: "续命"
 			icon: "minecraft:totem_of_undying"
-			x: -8.0d
-			y: -0.5d
+			x: -9.0d
+			y: 0.5d
 			subtitle: "4金币"
 			description: ["Error: Object not Found"]
 			id: "6D9F2FBEB7CC5195"
@@ -266,10 +266,10 @@
 			}]
 		}
 		{
-			title: "“哪来的怪？”"
+			title: "“哎呦我操，哪来的怪？”"
 			icon: "create:haunted_bell"
-			x: -4.0d
-			y: 1.5d
+			x: -0.5d
+			y: 1.0d
 			subtitle: "45银币"
 			description: ["什么，这不是黄铜钟，这是奇异钟，它遇暗处发出灵魂火，可以告诉你潜在的刷怪位点。什么，这么好在哪买？来下方小黄车，买一送一，还包邮。"]
 			id: "4B52A04818075900"
@@ -297,8 +297,8 @@
 		{
 			title: "玩火行径"
 			icon: "thermal:explosive_grenade"
-			x: -6.0d
-			y: 3.5d
+			x: -9.5d
+			y: 4.0d
 			subtitle: "32银币"
 			description: ["热力武器（试用版）"]
 			id: "1CC29991D5F248CA"
@@ -340,8 +340,8 @@
 		{
 			title: "园丁新手包"
 			icon: "forbidden_arcanus:cherry_flower_vines"
-			x: -7.0d
-			y: 0.5d
+			x: -14.5d
+			y: -0.5d
 			subtitle: "24银币"
 			id: "42384DE39AA48976"
 			description: ["首充立返0%"]
@@ -389,8 +389,8 @@
 		{
 			title: "画家入门套餐"
 			icon: "minecraft:painting"
-			x: -6.0d
-			y: 1.5d
+			x: -4.0d
+			y: 3.5d
 			subtitle: "24银币"
 			id: "61B040CD0832EFC0"
 			tasks: [{
@@ -453,10 +453,10 @@
 			]
 		}
 		{
-			title: "铁道工初始包"
+			title: "矿车工初始包"
 			icon: "minecraft:minecart"
-			x: -5.0d
-			y: -1.5d
+			x: -1.5d
+			y: -2.5d
 			subtitle: "24银币"
 			id: "117587D824D23D69"
 			tasks: [{
@@ -503,8 +503,8 @@
 		{
 			title: "宠物猪起始包"
 			icon: "minecraft:tropical_fish"
-			x: -8.0d
-			y: 1.5d
+			x: -12.5d
+			y: 2.0d
 			subtitle: "24银币"
 			id: "2D75D1864FB1EF75"
 			tasks: [{
@@ -550,8 +550,8 @@
 		{
 			title: "即兴装饰"
 			icon: "minecraft:oak_leaves"
-			x: -5.0d
-			y: 0.5d
+			x: -4.0d
+			y: -2.0d
 			subtitle: "24银币"
 			description: ["建筑不好看？先来点树叶试试？"]
 			id: "7D93DAB3E8ACF953"
@@ -606,8 +606,8 @@
 			title: "别吧，蜜蜂还是算了"
 			icon: "minecraft:bee_nest"
 			disable_toast: true
-			x: -5.0d
-			y: 2.5d
+			x: -6.0d
+			y: 1.5d
 			subtitle: "48银币"
 			repeatable: true
 			id: "003E0D1CE60B166A"
@@ -970,7 +970,7 @@
 			]
 		}
 		{
-			title: "交易终端-个人版"
+			title: "个人版交易终端"
 			icon: "thermal:machine_press"
 			disable_toast: true
 			x: -6.0d
@@ -984,10 +984,90 @@
 				count: 32L
 				consume_items: true
 			}]
-			rewards: [{
-				id: "41E2956742CCFEF9"
+			rewards: [
+				{
+					id: "41E2956742CCFEF9"
+					type: "item"
+					item: "thermal:machine_press"
+				}
+				{
+					id: "3AB970D8EB632F12"
+					type: "item"
+					item: "thermal:dynamo_stirling"
+				}
+			]
+		}
+		{
+			title: "铁道工新手包"
+			icon: "create:track"
+			x: 1.5d
+			y: -1.0d
+			subtitle: "8金币"
+			description: ["这里有满足你建造铁路帝国的一切！（共计8金币，不含税）"]
+			dependencies: ["32FE250DD6950ABE"]
+			hide: false
+			id: "2C47FB25257D7FD2"
+			tasks: [{
+				id: "5B318119ECF1D14C"
 				type: "item"
-				item: "thermal:machine_press"
+				item: "thermal:gold_coin"
+				count: 8L
+			}]
+			rewards: [
+				{
+					id: "6D5050756172B0B3"
+					type: "item"
+					item: "create:track_station"
+				}
+				{
+					id: "0D2323F46CE6C5A4"
+					type: "item"
+					item: "create:controls"
+				}
+				{
+					id: "3D5639B87FD67EAD"
+					type: "item"
+					item: "create:railway_casing"
+					count: 16
+				}
+				{
+					id: "31954041E7A6E124"
+					type: "item"
+					item: "create:track"
+					count: 64
+				}
+				{
+					id: "1325E74AA8ABEC89"
+					type: "item"
+					item: "railways:red_conductor_cap"
+				}
+			]
+		}
+		{
+			title: "拾陨不济"
+			icon: "ae2:silicon_press"
+			disable_toast: true
+			x: -1.0d
+			y: 3.5d
+			subtitle: "48银币"
+			description: ["只需要付出48银币，全套压印模板就是你的啦！"]
+			dependencies: ["0279C9E65A622D89"]
+			repeatable: true
+			id: "4ED6E19C611A9CBB"
+			tasks: [{
+				id: "7B96DFCF759480A6"
+				type: "item"
+				item: "thermal:silver_coin"
+				count: 48L
+				consume_items: true
+			}]
+			rewards: [{
+				id: "5ABB5E368E0B91D0"
+				type: "choice"
+				title: "压印模板套装"
+				icon: "ae2:sky_stone_chest"
+				exclude_from_claim_all: true
+				table_id: 3970427651858441423L
 			}]
 		}
 	]

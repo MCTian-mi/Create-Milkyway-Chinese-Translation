@@ -13,6 +13,7 @@
 			x: 0.0d
 			y: -2.5d
 			subtitle: "&a☑&r我已阅读并同意以上条款"
+			description: ["制作逻辑构件以解锁应用能源2的储存及自动化装置！"]
 			dependencies: ["799F6769884BAAAD"]
 			hide: true
 			id: "32F62312B7D4D162"
@@ -544,7 +545,10 @@
 			y: 0.0d
 			subtitle: "你就说可以不可以吧"
 			shape: "hexagon"
-			description: ["你说得对，但是用注液器给赛特斯石英种子灌水更快。"]
+			description: [
+				"你说得对，但是——",
+				"——用注液器给赛特斯石英种子灌水更快。"
+				]
 			hide_dependency_lines: true
 			dependencies: ["2ADAC0B8BF09A42F"]
 			id: "6EE9CA8AB4D7015E"
@@ -557,7 +561,7 @@
 				{
 					id: "343363290609265A"
 					type: "checkmark"
-					title: "Certus Soaking"
+					title: "已自动化"
 				}
 			]
 		}
@@ -588,7 +592,10 @@
 				id: "33ACF437F56B5150"
 				type: "checkmark"
 				title: "我该怎样自动化生产经验颗粒？"
-				description: ["右边的思索可能会给你一些提示。"]
+				description: [
+					"右边的思索可能会给你一些提示。",
+					"你也可以通过使用指令/create ponder create:experience_nugget来打开思索界面。"
+					]
 			}]
 			rewards: [{
 				id: "28A2E1B1E794058E"

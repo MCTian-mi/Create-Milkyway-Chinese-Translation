@@ -1,1 +1,15 @@
-"# Create-Milkyway-Chinese-Translation" 
+# Create Milkyway 汉化
+
+
+## Images
+
+
+## 下载
+
+如果不会可以点下面这个蓝色按钮
+
+[![Download](https://img.shields.io/badge/download-latest-blue.svg)](https://github.com/MCTian-mi/Create-Milkyway-Chinese-Translation.git)
+
+## 安装
+
+覆盖到.minecraft文件下，记得启用资源包，否则会缺失部分汉化
