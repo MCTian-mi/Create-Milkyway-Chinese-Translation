@@ -8,7 +8,7 @@
 
 如果不会可以点下面这个蓝色按钮
 
-[![Download](https://github.com/MCTian-mi/Create-Milkyway-Chinese-Translation/archive/refs/heads/main.zip)
+[![Download](https://img.shields.io/badge/download-latest-blue.svg)](https://github.com/MCTian-mi/Create-Milkyway-Chinese-Translation/archive/refs/heads/main.zip)
 
 ## 安装
 
