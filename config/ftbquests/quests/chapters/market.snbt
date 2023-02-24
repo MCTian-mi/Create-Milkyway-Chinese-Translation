@@ -55,7 +55,7 @@
 			x: -4.0d
 			y: -4.0d
 			shape: "circle"
-			subtitle: "Gold→银币"
+			subtitle: "金币→银币"
 			description: ["在这里你可以把你的金币换回面值更小的银币。"]
 			dependencies: ["0F870BEA235D662D"]
 			repeatable: true
